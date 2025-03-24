@@ -23,6 +23,9 @@ export default function Home() {
             <Link href="#clients" className="text-sm font-medium hover:text-primary">
               Clientes
             </Link>
+            <Link href="/interactive-demo" className="text-sm font-medium hover:text-primary">
+              Demo Interactiva
+            </Link>
             <Link href="#contact" className="text-sm font-medium hover:text-primary">
               Contacto
             </Link>
@@ -31,8 +34,8 @@ export default function Home() {
             <Link href="/login">
               <Button variant="outline">Iniciar Sesión</Button>
             </Link>
-            <Link href="/demo">
-              <Button>Solicitar Demo</Button>
+            <Link href="/interactive-demo">
+              <Button>Probar Demo</Button>
             </Link>
           </div>
         </div>
@@ -364,9 +367,18 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Link href="/demo">
+              <Link href="/interactive-demo">
                 <Button size="lg" variant="secondary" className="gap-1">
-                  Solicitar Demo <ArrowRight className="h-4 w-4" />
+                  Probar Demo Interactiva <ArrowRight className="h-4 w-4" />
+                </Button>
+              </Link>
+              <Link href="/demo">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="text-primary-foreground border-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                >
+                  Solicitar Demo Completa
                 </Button>
               </Link>
               <Link href="/contact">
